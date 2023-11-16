@@ -7,11 +7,23 @@
     */
 
     //Entrada
-
+    let palavra = prompt(`Informe uma palavra`)
 
     //Processamento
+    function Vogal() {
+        let totalVogal = 0;
+        let vogais = ['a', 'e', 'i', 'o', 'u'];
+        let i;
 
+        for (i = 0; i < palavra.length; i++) {
+            if (vogais.indexOf(palavra[i]) != -1) {
+                totalVogal++;
+            }
+        }
+        alert(`A quantidade de vogal é ${totalVogal}`)
+    }
 
     //Saída
+    Vogal();
 
 </script>
